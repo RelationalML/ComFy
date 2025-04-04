@@ -1,12 +1,12 @@
 # GNNs Getting ComFy: Community and Feature Similarity Guided Rewiring (ICLR 2025)
 
-Celia Rubio-Madrigal \*, Adarsh Jamadandi \*, Rebekka Burkholz
+[![arXiv](https://img.shields.io/badge/arXiv-2502.04891-b31b1b.svg)](https://arxiv.org/abs/2502.04891)
+[![ICLR](https://img.shields.io/badge/ICLR-2025-green.svg)](https://openreview.net/forum?id=g6v09VxgFw)
 
-\* Equal Contribution
+>Celia Rubio-Madrigal\*, Adarsh Jamadandi\*, Rebekka Burkholz. 
+>CISPA Helmholtz Center for Information Security. \* Equal Contribution
 
-This repository contains the code for the paper "GNNs Getting ComFy: Community and Feature Similarity Guided Rewiring", which has been accepted at ICLR 2025!
-
-[OpenReview](https://openreview.net/forum?id=g6v09VxgFw)
+This repository contains the code for the paper "GNNs Getting ComFy: Community and Feature Similarity Guided Rewiring", which has been accepted at ICLR 2025.
 
 #### Abstract
 
@@ -50,6 +50,8 @@ url={https://openreview.net/forum?id=g6v09VxgFw}
 ```
 
 The spectral gap optimization [code](https://github.com/RelationalML/SpectralPruningBraess) is based on our previous work accepted at NeurIPS 2024:
+
+[![NeurIPS 2024](https://img.shields.io/badge/NeurIPS-2024-purple.svg)](https://openreview.net/forum?id=EMkrwJY2de)
 
 ```bibtex
 @inproceedings{
