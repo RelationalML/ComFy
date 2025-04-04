@@ -19,9 +19,6 @@ def set_seed(seed):
     print(f"Random seed set as {seed}")
 
 def train_and_get_results(data, model, p, lr, seed, splits, weight_decay=5e-4):
-    final_test_accuracies = []
-    final_train_accuracies = []
-    final_val_accuracies = []  # New list to store validation accuracies
 
     def train():
         model.train()
@@ -86,6 +83,6 @@ def train_and_get_results(data, model, p, lr, seed, splits, weight_decay=5e-4):
     print(f"Average Test Accuracy: {np.mean(test_acc_allsplits):.2f}% ± {2 * np.std(test_acc_allsplits) / np.sqrt(len(test_acc_allsplits)):.2f}%")
     print(f"Average Validation Accuracy: {np.mean(val_acc_allsplits):.2f}% ± {2 * np.std(val_acc_allsplits) / np.sqrt(len(val_acc_allsplits)):.2f}%")
 
-    return np.mean(test_acc_allsplits), 2 * np.std(test_acc_allsplits) / np.sqrt(len(test_acc_allsplits)),final_val_acc,2 * np.std(val_acc_allsplits) / np.sqrt(len(val_acc_allsplits))
+    return np.mean(test_acc_allsplits), 2 * np.std(test_acc_allsplits) / np.sqrt(len(test_acc_allsplits)),np.mean(val_acc_allsplits),2 * np.std(val_acc_allsplits) / np.sqrt(len(val_acc_allsplits))
 
 
